@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>listDialog</class>
+ <widget class="QDialog" name="listDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>220</width>
+    <height>320</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTreeWidget" name="treeWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>25</y>
+     <width>215</width>
+     <height>250</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="columnCount">
+    <number>1</number>
+   </property>
+   <attribute name="headerVisible">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="headerCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <column>
+    <property name="text">
+     <string notr="true">1</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="modButton">
+   <property name="geometry">
+    <rect>
+     <x>61</x>
+     <y>285</y>
+     <width>44</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-image: url(:/图片/列表操作按钮/button.png);
+	color: #000000;
+}
+QPushButton:hover{
+border-image: url(:/图片/列表操作按钮/button_hover.png);
+	color: #da5105;
+}
+QPushButton:pressed{
+border-image: url(:/图片/列表操作按钮/button_pressed.png);
+	color: #da5105;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>修改</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="backLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>220</width>
+     <height>320</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="list.qrc">:/图片/listDialog.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="titleLabel">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>5</y>
+     <width>64</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="list.qrc">:/图片/标题/stationList.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="minButton">
+   <property name="geometry">
+    <rect>
+     <x>131</x>
+     <y>1</y>
+     <width>36</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-image: url(:/图片/最小化/min.png);
+}
+QPushButton:hover{
+border-image: url(:/图片/最小化/min_pressed.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>1</y>
+     <width>38</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-image: url(:/图片/关闭/close.png);
+}
+QPushButton:hover{
+border-image: url(:/图片/关闭/close_pressed.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="moveButton">
+   <property name="geometry">
+    <rect>
+     <x>115</x>
+     <y>285</y>
+     <width>44</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-image: url(:/图片/列表操作按钮/button.png);
+	color: #000000;
+}
+QPushButton:hover{
+border-image: url(:/图片/列表操作按钮/button_hover.png);
+	color: #da5105;
+}
+QPushButton:pressed{
+border-image: url(:/图片/列表操作按钮/button_pressed.png);
+	color: #da5105;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>移动</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addButton">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>285</y>
+     <width>44</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-image: url(:/图片/列表操作按钮/button.png);
+	color: #000000;
+}
+QPushButton:hover{
+border-image: url(:/图片/列表操作按钮/button_hover.png);
+	color: #da5105;
+}
+QPushButton:pressed{
+border-image: url(:/图片/列表操作按钮/button_pressed.png);
+	color: #da5105;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>添加</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="delButton">
+   <property name="geometry">
+    <rect>
+     <x>167</x>
+     <y>285</y>
+     <width>44</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-image: url(:/图片/列表操作按钮/button.png);
+	color: #000000;
+}
+QPushButton:hover{
+border-image: url(:/图片/列表操作按钮/button_hover.png);
+	color: #da5105;
+}
+QPushButton:pressed{
+border-image: url(:/图片/列表操作按钮/button_pressed.png);
+	color: #da5105;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </widget>
+  <zorder>backLabel</zorder>
+  <zorder>treeWidget</zorder>
+  <zorder>modButton</zorder>
+  <zorder>titleLabel</zorder>
+  <zorder>minButton</zorder>
+  <zorder>closeButton</zorder>
+  <zorder>moveButton</zorder>
+  <zorder>addButton</zorder>
+  <zorder>delButton</zorder>
+ </widget>
+ <resources>
+  <include location="list.qrc"/>
+ </resources>
+ <connections/>
+</ui>

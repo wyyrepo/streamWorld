@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>addDialog</class>
+ <widget class="QDialog" name="addDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>335</width>
+    <height>195</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>335</width>
+    <height>195</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>335</width>
+    <height>195</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+    <pointsize>11</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>添加</string>
+  </property>
+  <widget class="QGroupBox" name="combBox">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>291</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>30</y>
+      <width>75</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>频道标题：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>60</y>
+      <width>75</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>频道地址：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="titleLine">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>27</y>
+      <width>150</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="addressLine">
+    <property name="geometry">
+     <rect>
+      <x>92</x>
+      <y>57</y>
+      <width>191</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QRadioButton" name="groupButton">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>15</y>
+     <width>70</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加组</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="groupLine">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>95</x>
+     <y>15</y>
+     <width>131</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="yesButton">
+   <property name="geometry">
+    <rect>
+     <x>81</x>
+     <y>155</y>
+     <width>80</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="noButton">
+   <property name="geometry">
+    <rect>
+     <x>181</x>
+     <y>155</y>
+     <width>80</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="stationButton">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>50</y>
+     <width>85</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加频道</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>groupButton</tabstop>
+  <tabstop>groupLine</tabstop>
+  <tabstop>stationButton</tabstop>
+  <tabstop>titleLine</tabstop>
+  <tabstop>addressLine</tabstop>
+  <tabstop>yesButton</tabstop>
+  <tabstop>noButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

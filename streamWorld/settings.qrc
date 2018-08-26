@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>方正粗活意简体.ttf</file>
+        <file>settings.ini</file>
+        <file>myico.ico</file>
+        <file>图片/图标/quit.ico</file>
+        <file>图片/steamWorld.png</file>
+        <file>图片/图标/about.ico</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/">
+        <file>图片/radioPlayer.png</file>
+        <file>图片/播放按钮/play.png</file>
+        <file>图片/播放按钮/play_hover.png</file>
+        <file>图片/播放按钮/play_pressed.png</file>
+        <file>图片/暂停按钮/pause.png</file>
+        <file>图片/暂停按钮/pause_hover.png</file>
+        <file>图片/暂停按钮/pause_pressed.png</file>
+        <file>图片/设置按钮/settings.png</file>
+        <file>图片/设置按钮/settings_pressed.png</file>
+        <file>图片/视频按钮/video.png</file>
+        <file>图片/视频按钮/video_pressed.png</file>
+        <file>图片/上一曲按钮/last.png</file>
+        <file>图片/上一曲按钮/last_hover.png</file>
+        <file>图片/上一曲按钮/last_pressed.png</file>
+        <file>图片/下一曲按钮/next.png</file>
+        <file>图片/下一曲按钮/next_hover.png</file>
+        <file>图片/下一曲按钮/next_pressed.png</file>
+        <file>图片/刷新按钮/refresh.png</file>
+        <file>图片/刷新按钮/refresh_hover.png</file>
+        <file>图片/刷新按钮/refresh_pressed.png</file>
+        <file>图片/停止按钮/stop.png</file>
+        <file>图片/停止按钮/stop_hover.png</file>
+        <file>图片/停止按钮/stop_pressed.png</file>
+        <file>图片/最小化/min.png</file>
+        <file>图片/最小化/min_pressed.png</file>
+        <file>图片/关闭/close.png</file>
+        <file>图片/关闭/close_pressed.png</file>
+        <file>图片/音量杆/slideBlock.png</file>
+        <file>图片/音量杆/slider.png</file>
+        <file>图片/列表按钮/listR.png</file>
+        <file>图片/列表按钮/listR_pressed.png</file>
+        <file>图片/标题/title.png</file>
+    </qresource>
+</RCC>

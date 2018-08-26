@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>图片/列表操作按钮/button.png</file>
+        <file>图片/列表操作按钮/button_hover.png</file>
+        <file>图片/列表操作按钮/button_pressed.png</file>
+        <file>图片/listDialog.png</file>
+        <file>图片/标题/stationList.png</file>
+        <file>图片/图标/folder.ico</file>
+        <file>图片/图标/video.ico</file>
+        <file>图片/图标/radio.ico</file>
+    </qresource>
+</RCC>

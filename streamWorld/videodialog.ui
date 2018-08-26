@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>videoDialog</class>
+ <widget class="QDialog" name="videoDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>368</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>368</width>
+    <height>280</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>video</string>
+  </property>
+  <widget class="QLabel" name="backLabel">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>368</width>
+     <height>280</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="video.qrc">:/图片/videoPlayer.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="titleLabel">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>6</y>
+     <width>60</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="radio.qrc">:/图片/标题/title.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="minButton">
+   <property name="geometry">
+    <rect>
+     <x>224</x>
+     <y>0</y>
+     <width>40</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#minButton{
+border-image: url(:/图片/最小化/min.png);
+}
+QPushButton#minButton:hover{
+border-image: url(:/图片/最小化/min_pressed.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="maxButton">
+   <property name="geometry">
+    <rect>
+     <x>264</x>
+     <y>0</y>
+     <width>36</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#maxButton{
+border-image: url(:/图片/最大化/max.png);
+}
+QPushButton#maxButton:hover{
+border-image: url(:/图片/最大化/max_pressed.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="closeButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>0</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#closeButton{
+border-image: url(:/图片/关闭/close.png);
+}
+QPushButton#closeButton:hover{
+border-image: url(:/图片/关闭/close_pressed.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="setButton">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>140</y>
+     <width>17</width>
+     <height>78</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#setButton{
+border-image: url(:/图片/设置按钮/setSide.png);
+}
+QPushButton#setButton:hover{
+border-image: url(:/图片/设置按钮/setSide_pressed.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="radioButton">
+   <property name="geometry">
+    <rect>
+     <x>3</x>
+     <y>63</y>
+     <width>17</width>
+     <height>78</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#radioButton{
+border-image: url(:/图片/音频按钮/radio.png);
+}
+QPushButton#radioButton:hover{
+border-image: url(:/图片/音频按钮/radio_pressed.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="displayWidget" native="true">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>27</y>
+     <width>321</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="listButton">
+   <property name="geometry">
+    <rect>
+     <x>349</x>
+     <y>63</y>
+     <width>17</width>
+     <height>78</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#listButton{
+border-image: url(:/图片/列表按钮/list.png);
+}
+QPushButton#listButton:hover{
+border-image: url(:/图片/列表按钮/list_pressed.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="showButton">
+   <property name="geometry">
+    <rect>
+     <x>349</x>
+     <y>140</y>
+     <width>17</width>
+     <height>78</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#showButton{
+border-image: url(:/图片/显示控制条按钮/show.png);
+}
+QPushButton#showButton:hover{
+border-image: url(:/图片/显示控制条按钮/show_pressed.png);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QWidget" name="actionWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>242</y>
+     <width>322</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QPushButton" name="lastButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>46</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/图片/上一曲按钮/last.png);
+}
+QPushButton:hover{
+border-image: url(:/图片/上一曲按钮/last_hover.png);
+}
+QPushButton:pressed{
+border-image: url(:/图片/上一曲按钮/last_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="shortcut">
+     <string>Left</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pauseButton">
+    <property name="geometry">
+     <rect>
+      <x>44</x>
+      <y>0</y>
+      <width>46</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/图片/播放控制条/pause.png);
+}
+QPushButton:hover{
+border-image: url(:/图片/播放控制条/pause_hover.png);
+}
+QPushButton:pressed{
+border-image: url(:/图片/播放控制条/pause_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="playButton">
+    <property name="geometry">
+     <rect>
+      <x>44</x>
+      <y>0</y>
+      <width>46</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/图片/播放控制条/play.png);
+}
+QPushButton:hover{
+border-image: url(:/图片/播放控制条/play_hover.png);
+}
+QPushButton:pressed{
+border-image: url(:/图片/播放控制条/play_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nextButton">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>0</y>
+      <width>46</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/图片/下一曲按钮/next.png);
+}
+QPushButton:hover{
+border-image: url(:/图片/下一曲按钮/next_hover.png);
+}
+QPushButton:pressed{
+border-image: url(:/图片/下一曲按钮/next_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="shortcut">
+     <string>Right</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refreshButton">
+    <property name="geometry">
+     <rect>
+      <x>132</x>
+      <y>0</y>
+      <width>46</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+border-image: url(:/图片/刷新按钮/refresh.png);
+}
+QPushButton:hover{
+border-image: url(:/图片/刷新按钮/refresh_hover.png);
+}
+QPushButton:pressed{
+border-image: url(:/图片/刷新按钮/refresh_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="shortcut">
+     <string>Up</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bottomLabel">
+    <property name="geometry">
+     <rect>
+      <x>178</x>
+      <y>0</y>
+      <width>143</width>
+      <height>26</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/图片/播放控制条/shade.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="icoLabel">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>4</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="video.qrc">:/图片/播放控制条/ico.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="indent">
+     <number>0</number>
+    </property>
+    <property name="openExternalLinks">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QSlider" name="volumeSlider">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>7</y>
+      <width>80</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="maximum">
+     <number>150</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="actionHider">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>271</y>
+     <width>322</width>
+     <height>9</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(246, 246, 246);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>backLabel</zorder>
+  <zorder>titleLabel</zorder>
+  <zorder>minButton</zorder>
+  <zorder>maxButton</zorder>
+  <zorder>closeButton</zorder>
+  <zorder>setButton</zorder>
+  <zorder>radioButton</zorder>
+  <zorder>listButton</zorder>
+  <zorder>showButton</zorder>
+  <zorder>displayWidget</zorder>
+  <zorder>actionWidget</zorder>
+  <zorder>actionHider</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>listButton</tabstop>
+  <tabstop>showButton</tabstop>
+  <tabstop>setButton</tabstop>
+  <tabstop>radioButton</tabstop>
+  <tabstop>minButton</tabstop>
+  <tabstop>maxButton</tabstop>
+  <tabstop>closeButton</tabstop>
+  <tabstop>lastButton</tabstop>
+  <tabstop>playButton</tabstop>
+  <tabstop>pauseButton</tabstop>
+  <tabstop>nextButton</tabstop>
+  <tabstop>refreshButton</tabstop>
+  <tabstop>volumeSlider</tabstop>
+ </tabstops>
+ <resources>
+  <include location="radio.qrc"/>
+  <include location="video.qrc"/>
+ </resources>
+ <connections/>
+</ui>

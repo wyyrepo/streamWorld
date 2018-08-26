@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/">
+        <file>图片/浮动栏/base.png</file>
+        <file>图片/浮动栏/fullScreen.png</file>
+        <file>图片/浮动栏/fullScreen_pressed.png</file>
+        <file>图片/浮动栏/last.png</file>
+        <file>图片/浮动栏/last_pressed.png</file>
+        <file>图片/浮动栏/next.png</file>
+        <file>图片/浮动栏/next_pressed.png</file>
+        <file>图片/浮动栏/pause.png</file>
+        <file>图片/浮动栏/pause_pressed.png</file>
+        <file>图片/浮动栏/play.png</file>
+        <file>图片/浮动栏/play_pressed.png</file>
+        <file>图片/videoPlayer.png</file>
+        <file>图片/最大化/max.png</file>
+        <file>图片/最大化/max_pressed.png</file>
+        <file>图片/最小化/min.png</file>
+        <file>图片/最小化/min_pressed.png</file>
+        <file>图片/关闭/close.png</file>
+        <file>图片/关闭/close_pressed.png</file>
+        <file>图片/音频按钮/radio.png</file>
+        <file>图片/音频按钮/radio_pressed.png</file>
+        <file>图片/设置按钮/settings.png</file>
+        <file>图片/设置按钮/settings_pressed.png</file>
+        <file>图片/设置按钮/setSide.png</file>
+        <file>图片/设置按钮/setSide_pressed.png</file>
+        <file>图片/videoMask.png</file>
+        <file>图片/播放控制条/shade.png</file>
+        <file>图片/播放控制条/play.png</file>
+        <file>图片/播放控制条/play_hover.png</file>
+        <file>图片/播放控制条/play_pressed.png</file>
+        <file>图片/播放控制条/ico.png</file>
+        <file>图片/播放控制条/pause.png</file>
+        <file>图片/播放控制条/pause_hover.png</file>
+        <file>图片/播放控制条/pause_pressed.png</file>
+        <file>图片/列表按钮/list.png</file>
+        <file>图片/列表按钮/list_pressed.png</file>
+        <file>图片/显示控制条按钮/show.png</file>
+        <file>图片/显示控制条按钮/show_pressed.png</file>
+        <file>图片/浮动栏/refresh.png</file>
+        <file>图片/浮动栏/refresh_pressed.png</file>
+        <file>size.ini</file>
+    </qresource>
+</RCC>
